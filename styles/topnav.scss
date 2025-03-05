@@ -1,9 +1,21 @@
-@import 'brandcolor.scss';
+@use 'base';
+
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  src: url('/fonts/vt323-v17-latin-regular.woff2') format('woff2');
+}
 
 .topnav {
+  overflow: hidden;
+  align-items: center;
+  align-content: stretch;
+  flex-grow: 1;
+  justify-items: start;
+  justify-content: stretch;
   margin-top: 0.25em;
   padding-left: 0.5em;
-  display: block;
+  display: grid;
   text-decoration: none;
 }
 ul.topnav {
@@ -11,7 +23,8 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: $Martinique;
+  background-color: base.$Martinique;
+  font-family: 'VT323', 'Courier New', Courier, monospace;
 }
 
 ul.topnav li {
@@ -20,7 +33,7 @@ ul.topnav li {
 
 ul.topnav li a {
   display: block;
-  color: white;
+  color: base.$white-lilac;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
