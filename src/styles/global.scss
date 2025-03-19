@@ -3,10 +3,15 @@ Global Css-Probs
 ==================== */
 @use 'base';
 
+
+/* =================
+[Font Family Probs] 
+==================== */
+
 @font-face {
   font-family: 'VT323';
-  font-style: normal;
   src: url('/fonts/vt323-v17-latin-regular.woff2') format('woff2');
+  font-style: normal;
 }
 
 @font-face {
@@ -114,9 +119,10 @@ pre {
 h2 {
   margin: 0 0 1em;
   font-weight: normal;
-  color: #111827;
+  color: base.$white-lilac;;
   font-size: 20px;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'VT323', 'Courier New', Courier, monospace;
+
 
   
 }
@@ -195,21 +201,26 @@ code {
     line-height: 1.5;
   }
 }
-.content-wrapper {
+.content-wrapper-kurs{
   background-color: base.$Martinique;
+  padding: 2em;
   margin-inline: auto;
   min-width: 90vh;
   max-width: 100vh;
-  color: base.$white-lilac;
+  gap: 2em;
+  border-style: solid; 
+  border-width: 0.2em;
+  border-color: base.$white-lilac;
+
   
 
-
 }
-.article-content {
+.article-content-kurs{
   display: grid;
   grid-auto-flow: row;
   gap: 2em;
   font-family: 'Source Sans 3', Verdana, sans-serif;
+  color: base.$white-lilac;
 }
 .footer-grid{
 background-color: base.$white-lilac;
