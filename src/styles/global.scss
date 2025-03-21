@@ -25,10 +25,12 @@ Global Css-Probs
 html,
 body {
   margin: 0;
+  margin-inline: auto;
   width: 100vw;
   height: 100vh;
   box-sizing: border-box;
   display: grid;
+  grid-template-columns: auto;
   background: linear-gradient(
     365deg,
     hsla(205, 46%, 10%, 1) 15%,
