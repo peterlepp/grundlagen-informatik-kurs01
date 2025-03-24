@@ -1,7 +1,7 @@
 @use 'base';
 
 //* 
-// https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+//  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 //
 //*
 @font-face {
@@ -12,11 +12,14 @@
 
 .topnav {
   overflow: hidden;
+  position: sticky;
   display: flex;
   flex-flow: row wrap;
   flex-grow: 1;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
   margin: 0;
   text-decoration: none;
   box-shadow: 0px 2px 12px 0px rgba(57, 223, 241, 0.3);
@@ -31,30 +34,33 @@ ul.topnav {
 }
 
 ul.topnav li {
-  float: left;
+  float: none;
 }
 
 ul.topnav li a {
   display: block;
   color: base.$white-lilac;
   text-align: center;
-  padding: 1em;
+  padding: 0.5rem;
   text-decoration: none;
 }
 ul.topnav li a:hover {
-  background-color: base.$picton-blue;
+  padding: 0.5rem;
+  border-style: solid;
+  border-bottom-width: 0.2rem;
+  border-color: base.$picton-blue;
+  color: base.$white;
 }
 
 ul.topnav li a:hover:not(.active) {
   border-color: base.$picton-blue;
-  border-style: solid;
-  border-width: 0.2em;
+  
 }
 
 ul.topnav li a.active {
   color: base.$picton-blue;
   border-style: solid;
-  border-width: 0.2em;
+  border-width: 0.2rem;
   
 }
 
