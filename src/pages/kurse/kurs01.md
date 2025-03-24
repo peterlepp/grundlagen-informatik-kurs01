@@ -1,9 +1,7 @@
 ---
-layout: "../layouts/Layout.astro';";
-title: "Kurs 01: Der Kommando-Parcour";
+layout: ../../layouts/Layout.astro
+title: Kurs 01 Der Kommando-Parcour
 ---
-
-## Programmieren unplugged – Denken wie ein Computer
 
 ## Ziel: Die Schüler sollen die Logik hinter Programmen und Algorithmen ohne die Verwendung von Computern verstehen lernen
 

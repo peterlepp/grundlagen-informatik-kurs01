@@ -1,16 +1,17 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
-import './styles/global.css';
+
+
+import heroImage from './public/assets/ascii-art.png';
+import '../styles/global.scss';
 ---
 
 <div id="container">
-  <img id="background" src={background.src} alt="" fetchpriority="high" />
+  
   <main>
     <section id="hero">
-      <h1>Informatik-Abenteuer für junge Entdecker</h1>
-      <h2>Hallo liebe SuS, Hallo liebes Lehrpersonal</h2>
-      <img src="assets/background.svg" alt="" srcset="" />
+      <img id="heroImg" src={heroImage.src} alt="Bild mit dem Text: Faszination Informatik entdecken" fetchpriority="high" />
+
     </section>
   </main>
 </div>
+

@@ -1,0 +1,84 @@
+@use 'base';
+
+//* 
+//  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+//
+//*
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  src: url('/fonts/vt323-v17-latin-regular.woff2') format('woff2');
+}
+
+.topnav {
+  overflow: hidden;
+  position: sticky;
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  margin: 0;
+  text-decoration: none;
+  box-shadow: 0px 2px 12px 0px rgba(57, 223, 241, 0.3);
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: base.$Martinique;
+  font-family: 'VT323', 'Courier New', Courier, monospace;
+}
+
+ul.topnav li {
+  float: none;
+}
+
+ul.topnav li a {
+  display: block;
+  color: base.$white-lilac;
+  text-align: center;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+ul.topnav li a:hover {
+  padding: 0.5rem;
+  border-style: solid;
+  border-bottom-width: 0.2rem;
+  border-color: base.$picton-blue;
+  color: base.$white;
+}
+
+ul.topnav li a:hover:not(.active) {
+  border-color: base.$picton-blue;
+  
+}
+
+ul.topnav li a.active {
+  color: base.$picton-blue;
+  border-style: solid;
+  border-width: 0.2rem;
+  
+}
+
+ul.topnav li.right {
+  float: right;
+}
+@media screen and (max-width: 375px) {
+  ul.topnav {
+    flex-direction: column;
+    flex-flow: column wrap;
+  }
+  #schusterjunge-logo {
+    align-items: center;
+    padding-bottom: 2.5em;
+  }
+}
+#schusterjunge-logo {
+  height: 1.5em;
+  width: min-content;
+}
+
