@@ -1,7 +1,7 @@
 {
   "name": "landingpage",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.2.3"
+    "astro": "^5.3.0",
+    "sass": "^1.85.1"
   }
 }
