@@ -30,14 +30,9 @@ body {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: auto;
-  background: linear-gradient(
-    365deg,
-    hsla(205, 46%, 10%, 1) 15%,
-    hsla(207, 41%, 27%, 1) 45%,
-
-    hsla(259, 22%, 22%, 1) 90%
-  );
+  background: rgba(52, 44, 69, 1);
   font-size: 1.25rem;
+  scroll-behavior: smooth;
 }
 
 #hero {
