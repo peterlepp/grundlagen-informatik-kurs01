@@ -14,10 +14,9 @@
   overflow: hidden;
   position: sticky;
   display: flex;
-  flex-flow: row wrap;
-  flex-grow: 1;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   align-content: space-around;
   margin: 0;
@@ -29,8 +28,9 @@ ul.topnav {
   margin: 0;
   padding: .5rem;
   overflow: hidden;
-  background-color: base.$Martinique;
+  background-color: var(--martinique);
   font-family: 'VT323', 'Courier New', Courier, monospace;
+  font-size: var(--nav-font-size);
 }
 
 ul.topnav li {
@@ -39,18 +39,18 @@ ul.topnav li {
 
 ul.topnav li a {
   display: block;
-  color: base.$white-lilac;
+  color: var(--white-lilac);
   text-align: center;
   text-decoration: none;
 }
 ul.topnav li a:hover {
-  color: base.$picton-blue;
+  color: var(--picton-blue);
 }
 
 
 ul.topnav li a:active {
-  color: base.$Martinique;
-  background-color: base.$picton-blue;
+  color: var(--martinique);
+  background-color: var(--picton-blue);
   
 }
 
@@ -71,18 +71,22 @@ ul.topnav li.right {
   ul.topnav {
     flex-direction: column;
     flex-flow: column wrap;
-    font-size: 2rem;
+    font-size: var(--nav-font-size);
   }
+    
   ul.topnav li {
     margin: 1rem 0 1rem 0;
+    margin-inline: 0;
+    
   }
+ 
   #schusterjunge-logo {
-    align-items: center;
-    padding-bottom: 2.5rem;
+      align-items: center;
+      padding-bottom: 2.5rem;
+  }
+
+  #schusterjunge-logo {
+      height: 1.5rem;
+      width: min-content;
   }
 }
-#schusterjunge-logo {
-  height: 1.5rem;
-  width: min-content;
-}
-

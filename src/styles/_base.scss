@@ -1,5 +1,36 @@
-$Martinique: #342c45;
-$white-lilac: #e1e2f4;
-$picton-blue: #39dff1;
-$white: white;
-$black: black;
+// *
+// Alle Css Grundelemente 
+//
+//*
+:root {
+--martinique: #342c45;
+--white-lilac: #e1e2f4;
+--picton-blue: #39dff1;
+--white: white;
+--black: black;
+}
+
+:root{
+  --nav-font-size: clamp(1.2rem, calc(1.2rem + 1vw), 1.8rem);
+
+}
+
+
+
+:root {
+
+@font-face {
+    font-family: 'VT323';
+    src: url('/fonts/vt323-v17-latin-regular.woff2') format('woff2');
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Source Sans 3';
+    src: url('/fonts/source-sans-3-v15-latin-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+}

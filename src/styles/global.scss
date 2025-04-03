@@ -5,22 +5,13 @@ Global Css-Probs
 
 
 /* =================
-[Font Family Probs] 
-==================== */
+Aufgaben 
+- Css Aufteilen nach htmlTags
+- Css Boxen 
+- css Textsytle
+===================*/
 
-@font-face {
-  font-family: 'VT323';
-  src: url('/fonts/vt323-v17-latin-regular.woff2') format('woff2');
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'Source Sans 3';
-  src: url('/fonts/source-sans-3-v15-latin-regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 html,
 body {
@@ -29,8 +20,8 @@ body {
   margin-inline: auto;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: auto;
-  background: rgba(52, 44, 69, 1);
+  gap: 3rem;
+  background: var(--martinique);
   font-size: 1.25rem;
   scroll-behavior: smooth;
 }
@@ -48,18 +39,6 @@ h1 {
   font-size: 36px;
   margin-top: 0.25em;
   font-family: 'VT323', 'Courier New', Courier, monospace;
-}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li.right,
-  ul.topnav li {
-    float: none;
-  }
-}
-
-#links {
-  display: flex;
-  gap: 16px;
 }
 
 #links a {
@@ -106,7 +85,7 @@ pre {
 h2 {
   margin: 0 0 1em;
   font-weight: normal;
-  color: base.$white-lilac;;
+  color: var(--white-lilac);
   font-size: 20px;
   font-family: 'VT323', 'Courier New', Courier, monospace;
 
@@ -189,26 +168,29 @@ code {
   }
 }
 .content-wrapper-kurs{
-  background-color: base.$Martinique;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--martinique);
+
+
   padding: 2em;
   margin-inline: auto;
   min-width: 90vh;
   max-width: 100vh;
-  gap: 2em;
-  border-style: solid; 
-  border-width: 0.2em;
-  border-color: base.$white-lilac;
 
+  gap: 2em;
+  box-shadow: 2em 3em 3em rgba(57, 223, 241, 0.3);
+              
   
 
 }
 .article-content-kurs{
-  display: grid;
-  grid-auto-flow: row;
+  display: flex;
+  flex-direction: column;
   gap: 2em;
   font-family: 'Source Sans 3', Verdana, sans-serif;
-  color: base.$white-lilac;
+  color: var(--White-lilac);
 }
 .footer-grid{
-background-color: base.$white-lilac;
+background-color: var(--martinique);
 }
