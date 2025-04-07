@@ -22,7 +22,7 @@ body {
   display: grid;
   gap: 3rem;
   background: var(--revolver);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--white-lilac);
   scroll-behavior: smooth;
 }
@@ -89,9 +89,6 @@ h2 {
   color: var(--white-lilac);
   font-size: var(--h2-font-size);
   font-family: 'VT323', 'Courier New', Courier, monospace;
-
-
-  
 }
 
 p {
@@ -171,8 +168,7 @@ code {
 .content-wrapper-kurs{
   display: flex;
   flex-direction: column;
-  background-color: var(--martinique);
-
+  background-color: var(--revolver);
 
   padding: 2em;
   margin-inline: auto;
@@ -180,7 +176,7 @@ code {
   max-width: 100vh;
 
   gap: 2em;
-  box-shadow: 2em 3em 3em rgba(57, 223, 241, 0.3);
+  box-shadow: -2px -2px 3em 12px rgba(57, 223, 241, 0.2);
               
   
 
