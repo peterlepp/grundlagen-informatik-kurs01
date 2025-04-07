@@ -3,22 +3,23 @@
 //
 //*
 :root {
---martinique: #342c45;
+--martinique:#3a2f5a;
+--revolver: #2a1e3c;
 --white-lilac: #e1e2f4;
 --picton-blue: #39dff1;
 --white: white;
---black: black;
-}
-
-:root{
-  --nav-font-size: clamp(1.2rem, calc(1.2rem + 1vw), 1.8rem);
-
+--black: #060606;
 }
 
 
 
+
+/* Typografie Variable */
 :root {
-
+  
+  --nav-font-size: clamp(1.2rem, calc(1.2rem + 1vw), 1.8rem);
+  --h2-font-size: clamp(1.5rem, calc(1.5rem + 2vw), 3rem);
+    
 @font-face {
     font-family: 'VT323';
     src: url('/fonts/vt323-v17-latin-regular.woff2') format('woff2');

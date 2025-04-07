@@ -21,8 +21,9 @@ body {
   box-sizing: border-box;
   display: grid;
   gap: 3rem;
-  background: var(--martinique);
+  background: var(--revolver);
   font-size: 1.25rem;
+  color: var(--white-lilac);
   scroll-behavior: smooth;
 }
 
@@ -86,7 +87,7 @@ h2 {
   margin: 0 0 1em;
   font-weight: normal;
   color: var(--white-lilac);
-  font-size: 20px;
+  font-size: var(--h2-font-size);
   font-family: 'VT323', 'Courier New', Courier, monospace;
 
 
@@ -193,4 +194,8 @@ code {
 }
 .footer-grid{
 background-color: var(--martinique);
+}
+#heroImg{
+  width: 100%;
+  height: auto;
 }

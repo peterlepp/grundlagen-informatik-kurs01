@@ -4,18 +4,12 @@
 //  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 //
 //*
-@font-face {
-  font-family: 'VT323';
-  font-style: normal;
-  src: url('/fonts/vt323-v17-latin-regular.woff2') format('woff2');
-}
 
 .topnav {
   overflow: hidden;
   position: sticky;
   display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
+  
   justify-content: center;
   align-items: center;
   align-content: space-around;
@@ -25,12 +19,14 @@
 }
 ul.topnav {
   list-style-type: none;
+  gap: 2rem;
+  flex-wrap: wrap;
   margin: 0;
-  padding: .5rem;
+  padding: 0.5rem;
   overflow: hidden;
-  background-color: var(--martinique);
+  background-color: var(--revolver);
   font-family: 'VT323', 'Courier New', Courier, monospace;
-  font-size: var(--nav-font-size);
+  /* font-size: var(--nav-font-size); */
 }
 
 ul.topnav li {
@@ -71,7 +67,7 @@ ul.topnav li.right {
   ul.topnav {
     flex-direction: column;
     flex-flow: column wrap;
-    font-size: var(--nav-font-size);
+    font-size: 2.5rem;
   }
     
   ul.topnav li {
