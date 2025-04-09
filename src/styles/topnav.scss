@@ -19,7 +19,7 @@
 }
 ul.topnav {
   list-style-type: none;
-  gap: 2rem;
+  gap: 4rem;
   flex-wrap: wrap;
   margin: 0;
   padding: 0.5rem;
@@ -38,10 +38,16 @@ ul.topnav li a {
   color: var(--white-lilac);
   text-align: center;
   text-decoration: none;
+  margin: 0.5rem;
+
+  
 }
 ul.topnav li a:hover {
   color: var(--picton-blue);
+  display: block;
+  animation-delay: 200;
 }
+
 
 
 ul.topnav li a:active {
@@ -49,6 +55,8 @@ ul.topnav li a:active {
   background-color: var(--picton-blue);
   
 }
+
+
 
 ul.topnav li.right {
   float: right;
