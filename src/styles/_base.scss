@@ -24,7 +24,7 @@
   --nav-font-size: clamp(1.2rem, calc(1.2rem + 1vw), 1.8rem);
   --h2-font-size: clamp(1.6rem, calc(1.6rem + 2vw), 3rem);
     
-@font-face {
+  @font-face {
     font-family: 'VT323';
     src: url('/fonts/vt323-v17-latin-regular.woff2') format('woff2');
     font-style: normal;
@@ -37,5 +37,5 @@
     font-style: normal;
     font-display: swap;
   }
-
+ 
 }
