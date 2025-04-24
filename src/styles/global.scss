@@ -5,19 +5,24 @@ Global Css-Probs
 
 
 
-html,
+html{
+  scroll-behavior: smooth;
+}
+
 body {
+  width: 100vw;
   margin-inline: auto;
   box-sizing: border-box;
   display: grid;
   gap: 3rem;
-  font-size: 1.2rem;
+  font-size: var(--font-base-size);
+  line-height: 1.6;
   background-color: var(--revolver);
   position: relative;
-  scroll-behavior: smooth;
+  
 }
 
-/* Class des Body-Elements */
+/* Header hero Container */
 
 
 header .hero-container{
@@ -25,21 +30,28 @@ header .hero-container{
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 1.2rem;
   font-family: 'Source Sans 3', Verdana, sans-serif;
   background-image: url('../assets/helloWorldBinaerCode.svg');
   background-size: cover;
-  background-repeat: repeat;
-  background-clip: border-box;
-  height: 100vh;
-  padding: 10px;
-  width: 100%;
+  background-repeat: repeat-x;
+  background-clip: padding-box;
+  height: 70ch;
+  max-width: 90ch;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  
   
 }
 
 header #hero{
-  box-shadow: 0 0 10px rgba(57 223 241 / 0.3);
-  backdrop-filter: blur(15px) brightness(100%);
+  backdrop-filter: blur(5px) brightness(100%);
+  -webkit-backdrop-filter: blur(5px);
+  
+  box-shadow: 0 0 0.5em rgba(57 223 241 / 0.3), inset 0 0 0.5em rgba(57 223 241 / 0.3);
+  border-color: var(--martinique);
+  border-style: solid;
+  border-width: 0.2rem;
   padding: 2rem;
   border-color: var(--martinique);
   border-style: solid;
@@ -47,7 +59,7 @@ header #hero{
   border-radius: 2rem;
   
 }
-/* Base Typogaphie*/
+/* Basis Typogaphie*/
 
 h1 {
   font-size: var(--header-h1-font-size);
@@ -64,12 +76,6 @@ h2 {
   font-family: 'VT323', 'Courier New', Courier, monospace;
 }
 
-
-@media screen and (max-height: 368px) {
-  #news {
-    display: none;
-  }
-}
 
 @media screen and (max-width: 768px) {
   #container {

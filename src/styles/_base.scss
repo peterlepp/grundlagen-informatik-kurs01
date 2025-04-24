@@ -6,7 +6,14 @@
 *{
   margin: 0;
   padding: 0;
-  }
+}
+
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 
 :root {
@@ -26,7 +33,9 @@
   
   --nav-font-size: clamp(1.2rem, calc(1.2rem + 1vw), 1.8rem);
   --h2-font-size: clamp(1.6rem, calc(1.6rem + 2vw), 3rem);
-  --header-h1-font-size: clamp(3rem, calc(3rem + 10vw), 20rem);
+  --header-h1-font-size: clamp(2.7rem, calc(2.7rem + 6vw), 14rem);
+  --p-text-size: clamp(0.8rem, calc(0.8rem +1vw), 1.5rem);
+  --font-base-size: 1rem;
     
   @font-face {
     font-family: 'VT323';
