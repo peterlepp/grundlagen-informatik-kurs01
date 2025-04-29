@@ -75,6 +75,13 @@ h2 {
   font-size: var(--h2-font-size);
   font-family: 'VT323', 'Courier New', Courier, monospace;
 }
+h3 {
+  font-weight: normal;
+  color: var(--picton-blue);
+  font-size: var(--h3-font-size);
+  font-family: 'VT323', 'Courier New', Courier, monospace;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -128,16 +135,15 @@ h2 {
   flex-direction: column;
   gap: 2em;
   font-family: 'Source Sans 3', Verdana, sans-serif;
-  color: var(--White-lilac);
-  backdrop-filter: blur(10px) brightness(110%);
+  color: var(--white-lilac);
 }
 
-.ul-list-element-robot {
+.ul-list-element{
     list-style-type: none;
     &::before{
-      content: "\F6B1";
-      font-family: 'bootstrap-icons';
-      margin-right: 1rem;
+      content: "🤖";
+      padding-right: 1rem;
+      margin: auto;
     }
 }
 
