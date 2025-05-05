@@ -1,17 +1,11 @@
 # Kurs 01 Grundlage Informatik
 
-DEV-Docs:
+Hier entsteht ein Kurs für Schülerin und Schüler, um die Grundlagen der informatik zu lernen. Mit Stift und Pappier werden komplexe Informatikgrundlagen anschaulich und Spielerisch vermittlet.
 
-## 🧞 Commands
+## Der Aufbau des Kurse
+Hier entsteht ein Kurs für Schülerin und Schüler, um die Grundlagen der Informatik zu lernen. 
+Mit Stift und Papier werden komplexe Informatikgrundlagen anschaulich und spielerisch vermittelet.
 
-All commands are run from the root of the project, from a terminal:
-
-| :------------------------ | :----------------------------------------------- |
-| `npm install` | Installs dependencies |
-| `npm run dev` | Starts local dev server at `localhost:4321` |
-| `npm run build` | Build your production site to `./dist/` |
-| `npm run preview` | Preview your build locally, before deploying |
-| `npm run astro ...` | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI |
+## Der Aufbau des Kurse
 
 
