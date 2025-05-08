@@ -7,13 +7,14 @@
 
 .topnav {
   overflow: hidden;
-  position: sticky;
+  position: relative;
   display: flex;
+  width: 90%;
   flex: auto;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0px 0.375rem;
+  margin: 1rem auto;
   text-decoration: none;
   box-shadow: 0px 2px 12px 0px rgba(57 223 241 / 0.3);
 }
@@ -21,7 +22,6 @@ ul.topnav {
   display: flex;
   list-style-type: none;
   gap: 2rem;
-  margin: 0px 0.375rem;
   padding: 0.5rem;
   overflow: hidden;
   background-color: var(--revolver);
