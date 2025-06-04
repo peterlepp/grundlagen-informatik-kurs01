@@ -16,7 +16,9 @@
   align-items: center;
   margin: 1rem auto;
   text-decoration: none;
-  box-shadow: 0px 2px 12px 0px rgba(57 223 241 / 0.3);
+  box-shadow: 0px 0px 10px  var(--picton-blue);
+  border: 1px solid var(--picton-blue);
+  border-radius: 1rem;
 }
 ul.topnav {
   display: flex;
